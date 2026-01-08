@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notary Services - Professionele Begeleiding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        padding: 20px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo-icon {
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 28px;
+        color: #1e3c72;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .logo-text h1 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+
+    .logo-text p {
+        font-size: 14px;
+        opacity: 0.9;
+        font-weight: 300;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+        color: #1e3c72;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 20px;
+        color: #555;
+        max-width: 800px;
+        margin: 0 auto 40px;
+        line-height: 1.8;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: #1e3c72;
+        color: white;
+        padding: 16px 40px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+    }
+
+    .cta-button:hover {
+        background: #2a5298;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4);
+    }
+
+    /* Services Section */
+    .services {
+        padding: 80px 0;
+        background: white;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 38px;
+        color: #1e3c72;
+        margin-bottom: 50px;
+        font-weight: 700;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .service-card {
+        background: #f8f9fa;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    }
+
+    .service-icon {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #1e3c72;
+    }
+
+    .service-card h3 {
+        font-size: 22px;
+        color: #1e3c72;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .service-card p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* About Section */
+    .about {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 38px;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    .about p {
+        font-size: 18px;
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 1.8;
+        opacity: 0.95;
+    }
+
+    /* Footer */
+    footer {
+        background: #1a1a1a;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    footer p {
+        opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+        .hero h2 {
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .logo-text h1 {
+            font-size: 22px;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">NS</div>
+                    <div class="logo-text">
+                        <h1>Notary Services</h1>
+                        <p>Professionele begeleiding bij notariële processen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+```
+<section class="hero">
+    <div class="container">
+        <h2>Expertise in Notariële Begeleiding</h2>
+        <p>Notary Services levert begeleiding aan boekhouders, fiscalisten en andere tussenpersonen bij notariële processen zoals het oprichten van een B.V., aandelenoverdrachten, statutenwijzigingen etc.</p>
+        <a href="#contact" class="cta-button">Neem Contact Op</a>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">Onze Diensten</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Oprichten B.V.</h3>
+                <p>Complete begeleiding bij het oprichten van een besloten vennootschap, van voorbereiding tot afronding.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Aandelenoverdrachten</h3>
+                <p>Professionele ondersteuning bij het overdragen van aandelen met aandacht voor alle juridische aspecten.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>Statutenwijzigingen</h3>
+                <p>Deskundige begeleiding bij het wijzigen van statuten en andere juridische documenten.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="contact">
+    <div class="container">
+        <h2>Waarom Notary Services?</h2>
+        <p>Wij begrijpen de uitdagingen waarmee boekhouders, fiscalisten en andere professionals worden geconfronteerd bij notariële processen. Met onze specialistische kennis en jarenlange ervaring zorgen wij voor een soepel en efficiënt verloop van alle notariële handelingen. Uw cliënten in goede handen, uw proces zorgeloos geregeld.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Notary Services. Alle rechten voorbehouden.</p>
+    </div>
+</footer>
+```
+
+</body>
+</html>
