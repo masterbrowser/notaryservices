@@ -10,15 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-    </style>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
 ```
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body {
         font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
         line-height: 1.6;
@@ -37,7 +36,7 @@
     header {
         background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
         color: white;
-        padding: 20px 0;
+        padding: 15px 0;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
@@ -54,8 +53,8 @@
     }
 
     .logo-icon {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         position: relative;
     }
 
@@ -66,13 +65,13 @@
     }
 
     .logo-text h1 {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 700;
         letter-spacing: -0.5px;
     }
 
     .logo-text p {
-        font-size: 14px;
+        font-size: 13px;
         opacity: 0.9;
         font-weight: 300;
     }
@@ -80,68 +79,49 @@
     /* Hero Section */
     .hero {
         background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        padding: 100px 0;
+        padding: 50px 0;
         text-align: center;
     }
 
     .hero h2 {
-        font-size: 48px;
+        font-size: 42px;
         color: #1e3c72;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         font-weight: 700;
     }
 
     .hero p {
-        font-size: 20px;
+        font-size: 18px;
         color: #555;
         max-width: 800px;
-        margin: 0 auto 40px;
-        line-height: 1.8;
-    }
-
-    .cta-button {
-        display: inline-block;
-        background: #1e3c72;
-        color: white;
-        padding: 16px 40px;
-        text-decoration: none;
-        border-radius: 50px;
-        font-size: 18px;
-        font-weight: 600;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
-    }
-
-    .cta-button:hover {
-        background: #2a5298;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4);
+        margin: 0 auto;
+        line-height: 1.7;
     }
 
     /* Services Section */
     .services {
-        padding: 80px 0;
+        padding: 40px 0;
         background: white;
     }
 
     .section-title {
         text-align: center;
-        font-size: 38px;
+        font-size: 34px;
         color: #1e3c72;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         font-weight: 700;
     }
 
     .services-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-top: 40px;
+        gap: 25px;
+        margin-top: 30px;
     }
 
     .service-card {
         background: #f8f9fa;
-        padding: 35px;
+        padding: 25px;
         border-radius: 12px;
         box-shadow: 0 3px 15px rgba(0,0,0,0.08);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -153,21 +133,21 @@
     }
 
     .service-icon {
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 36px;
+        margin-bottom: 15px;
         color: #1e3c72;
     }
 
     .service-card h3 {
-        font-size: 22px;
+        font-size: 20px;
         color: #1e3c72;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         font-weight: 600;
     }
 
     .service-card p {
         color: #666;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.6;
     }
 
@@ -175,21 +155,21 @@
     .about {
         background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
         color: white;
-        padding: 80px 0;
+        padding: 50px 0;
         text-align: center;
     }
 
     .about h2 {
-        font-size: 38px;
-        margin-bottom: 30px;
+        font-size: 34px;
+        margin-bottom: 20px;
         font-weight: 700;
     }
 
     .about p {
-        font-size: 18px;
+        font-size: 16px;
         max-width: 900px;
         margin: 0 auto;
-        line-height: 1.8;
+        line-height: 1.7;
         opacity: 0.95;
     }
 
@@ -198,20 +178,29 @@
         background: #1a1a1a;
         color: white;
         text-align: center;
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     footer p {
         opacity: 0.8;
+        font-size: 14px;
     }
 
     @media (max-width: 768px) {
+        .hero {
+            padding: 40px 0;
+        }
+
         .hero h2 {
-            font-size: 36px;
+            font-size: 32px;
         }
 
         .hero p {
-            font-size: 18px;
+            font-size: 16px;
+        }
+
+        .services {
+            padding: 30px 0;
         }
 
         .services-grid {
@@ -219,12 +208,12 @@
         }
 
         .logo-text h1 {
-            font-size: 22px;
+            font-size: 20px;
         }
 
         .logo-icon {
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
         }
     }
 </style>
@@ -272,7 +261,7 @@
 <section class="hero">
     <div class="container">
         <h2>Expertise in Notariële Begeleiding</h2>
-        <p>Notary Services levert begeleiding aan boekhouders, fiscalisten en andere tussenpersonen bij notariële processen zoals het oprichten van een B.V., aandelenoverdrachten, statutenwijzigingen etc.</p>
+        <p>Notary Services levert begeleiding aan boekhouders, fiscalisten en andere tussenpersonen bij notariële processen zoals het oprichten van een B.V., aandelenoverdrachten en statutenwijzigingen</p>
     </div>
 </section>
 
@@ -311,7 +300,5 @@
         <p>&copy; 2026 Notary Services. Alle rechten voorbehouden.</p>
     </div>
 </footer>
-```
-
 </body>
 </html>
