@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notary Services - Professionele Begeleiding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,7 +17,7 @@
 
 ```
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         line-height: 1.6;
         color: #333;
     }
@@ -46,22 +49,20 @@
     }
 
     .logo-icon {
-        width: 60px;
-        height: 60px;
-        background: white;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        font-size: 28px;
-        color: #1e3c72;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        width: 70px;
+        height: 70px;
+        position: relative;
+    }
+
+    .logo-icon svg {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
     }
 
     .logo-text h1 {
         font-size: 28px;
-        font-weight: 600;
+        font-weight: 700;
         letter-spacing: -0.5px;
     }
 
@@ -215,6 +216,11 @@
         .logo-text h1 {
             font-size: 22px;
         }
+
+        .logo-icon {
+            width: 55px;
+            height: 55px;
+        }
     }
 </style>
 ```
@@ -225,22 +231,43 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <div class="logo-icon">NS</div>
-                    <div class="logo-text">
-                        <h1>Notary Services</h1>
-                        <p>Professionele begeleiding bij notariële processen</p>
-                    </div>
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Circular background -->
+                            <circle cx="50" cy="50" r="45" fill="white"/>
+
+```
+                        <!-- Document/Paper -->
+                        <rect x="30" y="25" width="40" height="50" rx="2" fill="#1e3c72"/>
+                        <rect x="33" y="28" width="34" height="44" rx="1" fill="white"/>
+                        
+                        <!-- Document lines -->
+                        <line x1="38" y1="35" x2="62" y2="35" stroke="#1e3c72" stroke-width="1.5" opacity="0.3"/>
+                        <line x1="38" y1="42" x2="62" y2="42" stroke="#1e3c72" stroke-width="1.5" opacity="0.3"/>
+                        <line x1="38" y1="49" x2="58" y2="49" stroke="#1e3c72" stroke-width="1.5" opacity="0.3"/>
+                        
+                        <!-- Letters NS -->
+                        <text x="50" y="62" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#1e3c72" text-anchor="middle">NS</text>
+                        
+                        <!-- Gold ribbon/seal accent -->
+                        <circle cx="62" cy="65" r="8" fill="#d4af37"/>
+                        <path d="M62 65 L65 72 L59 72 Z" fill="#b8941f"/>
+                        <circle cx="62" cy="65" r="5" fill="none" stroke="white" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>Notary Services</h1>
+                    <p>Professionele begeleiding bij notariële processen</p>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-```
 <section class="hero">
     <div class="container">
         <h2>Expertise in Notariële Begeleiding</h2>
-        <p>Notary Services levert begeleiding aan boekhouders, fiscalisten en andere tussenpersonen bij notariële processen zoals het oprichten van een B.V., aandelenoverdrachten, statutenwijzigingen etc.</p>
-        <a href="#contact" class="cta-button">Neem Contact Op</a>
+        <p>Notary Services levert begeleiding aan boekhouders, fiscalisten en andere tussenpersonen bij notariële processen zoals het oprichten van een B.V., aandelenoverdrachten en statutenwijzigingen</p>
     </div>
 </section>
 
